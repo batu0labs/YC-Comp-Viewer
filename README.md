@@ -121,23 +121,6 @@ npm run build
 
 Build başarıyla tamamlanmalıdır. Canlı veriyle yapılan kontrolde binlerce şirket yüklenmesine rağmen yalnızca görünür alana yakın kartların DOM’da tutulduğu, arama/filtreleme/sıralamanın ve dil/tema geçişlerinin çalıştığı doğrulanmıştır.
 
-## GitHub Pages ile yayınlama
-
-Projeyi GitHub Pages üzerinde yayınlamak için Vite'ın production build'ini oluşturup `dist` klasörünü yayınlayabilirsiniz. Alternatif olarak GitHub Actions ile otomatik deployment yapılandırılabilir.
-
-Vite'ın GitHub Pages üzerinde proje alt yolu ile çalışması gerekiyorsa `vite.config.js` içerisinde repository adını `base` olarak tanımlayın.
-
-Örnek:
-
-```js
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-
-export default defineConfig({
-  plugins: [react()],
-  base: '/yc-comp-viewer/'
-});
-```
 
 ## Lisans
 
